@@ -77,7 +77,7 @@ export default class ScoreTable extends React.Component {
 
     render() {
       return (
-        <Grid container spacing={40}>
+        <Grid container spacing={32}>
             <Grid item xs>
                 <Paper>
                     <MaterialTable 
@@ -91,7 +91,6 @@ export default class ScoreTable extends React.Component {
                     />
                 </Paper>
                 <CustomEntryForm className="paper">
-                    Enter Student ID: 
                     <NumericInput
                     placeholder="Enter Student ID:"
                     min={1000}
@@ -103,15 +102,12 @@ export default class ScoreTable extends React.Component {
                             marginTop: 5,
                             marginBottom: 5,
                             height: 30,
-                            marginLeft: 5
                         },
                         btn: {
                             display: 'none'
                         }
                     }}
                     />
-                    <br />
-                    Enter Score: 
                     <NumericInput
                     placeholder="Enter Score:"
                     min={0}
@@ -123,7 +119,7 @@ export default class ScoreTable extends React.Component {
                             marginTop: 5,
                             marginBottom: 5,
                             height: 30,
-                            marginLeft: 5
+                            marginLeft: 2
                         },
                         btn: {
                             display: 'none'

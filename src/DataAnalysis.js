@@ -12,7 +12,8 @@ const CustomListItem = styled(ListItem)({
     textAlign: 'center',
     marginRight: 'auto',
     marginLeft: 'auto',
-    marginTop: '10px'
+    marginTop: '11px',
+    marginBottom: '11px'
 })
 
 export default class DataAnalysis extends React.Component {
@@ -48,13 +49,13 @@ export default class DataAnalysis extends React.Component {
     findMax = () => {
         let data = this.props.data;
         let scores = data.slice(0);
-        let max =  Math.max.apply(Math, scores.map(function(o) { return o.score; }));
+        let max =  Math.max.apply(Math, scores.map(function(n) { return n.score; }));
         this.setState({ max })
     }
     findMin = () => {
         let data = this.props.data;
         let scores = data.slice(0);
-        let min =  Math.min.apply(Math, scores.map(function(o) { return o.score; }));
+        let min =  Math.min.apply(Math, scores.map(function(n) { return n.score; }));
         this.setState({ min })
     }
     findAvg = () => {
